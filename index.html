@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Junaid Zaffar | Lecturer & AI Researcher</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            500: '#0284c7',
+                            600: '#0369a1',
+                            700: '#095180',
+                            800: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #0284c7 0%, #0d9488 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .avatar-glow {
+            box-shadow: 0 0 25px -5px rgba(2, 132, 199, 0.3), 0 0 10px -5px rgba(13, 148, 136, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased leading-relaxed selection:bg-sky-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200/80 shadow-sm transition-all duration-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center space-x-3">
+                    <img src="junu_editted.jpeg" onerror="this.onerror=null; this.src='https://placehold.co/100x100/0284c7/white?text=MJZ';" alt="M. Junaid Zaffar" class="w-9 h-9 rounded-full object-cover border border-sky-500/30">
+                    <a href="#" class="text-xl font-bold text-slate-900 tracking-tight hover:text-sky-600 transition">
+                        M. Junaid Zaffar
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-1 lg:space-x-4 text-sm font-medium text-slate-600">
+                    <a href="#about" class="px-3 py-2 rounded-lg hover:text-sky-600 hover:bg-slate-100 transition">About</a>
+                    <a href="#education" class="px-3 py-2 rounded-lg hover:text-sky-600 hover:bg-slate-100 transition">Education</a>
+                    <a href="#experience" class="px-3 py-2 rounded-lg hover:text-sky-600 hover:bg-slate-100 transition">Experience</a>
+                    <a href="#projects" class="px-3 py-2 rounded-lg hover:text-sky-600 hover:bg-slate-100 transition">Projects</a>
+                    <a href="#skills" class="px-3 py-2 rounded-lg hover:text-sky-600 hover:bg-slate-100 transition">Skills</a>
+                    <a href="#contact" class="ml-2 px-4 py-2 rounded-lg bg-sky-600 text-white font-medium hover:bg-sky-700 shadow-sm transition">Contact</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="flex items-center md:hidden">
+                    <button id="mobile-menu-btn" type="button" class="p-2 rounded-md text-slate-600 hover:text-slate-900 hover:bg-slate-100 focus:outline-none">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden border-b border-slate-200 bg-white px-4 pt-2 pb-4 space-y-1">
+            <a href="#about" class="block px-3 py-2 rounded-md text-slate-700 font-medium hover:bg-slate-100">About</a>
+            <a href="#education" class="block px-3 py-2 rounded-md text-slate-700 font-medium hover:bg-slate-100">Education</a>
+            <a href="#experience" class="block px-3 py-2 rounded-md text-slate-700 font-medium hover:bg-slate-100">Experience</a>
+            <a href="#projects" class="block px-3 py-2 rounded-md text-slate-700 font-medium hover:bg-slate-100">Projects</a>
+            <a href="#skills" class="block px-3 py-2 rounded-md text-slate-700 font-medium hover:bg-slate-100">Skills</a>
+            <a href="#contact" class="block px-3 py-2 rounded-md bg-sky-600 text-white text-center font-medium mt-2">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="py-16 md:py-24 bg-gradient-to-b from-sky-50/50 via-white to-slate-50 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left: Profile Image & Badges -->
+                <div class="lg:col-span-5 flex flex-col items-center">
+                    <div class="relative group">
+                        <!-- Decorative Backdrop Ring -->
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-sky-600 to-teal-500 rounded-full blur opacity-40 group-hover:opacity-75 transition duration-500"></div>
+                        
+                        <!-- Profile Image Container -->
+                        <div class="relative w-56 h-56 sm:w-64 sm:h-64 rounded-full overflow-hidden border-4 border-white shadow-xl avatar-glow bg-white">
+                            <img 
+                                src="junu_editted.jpeg" 
+                                onerror="this.onerror=null; this.src='https://placehold.co/400x400/0284c7/white?text=Muhammad+Junaid+Zaffar';" 
+                                alt="Muhammad Junaid Zaffar" 
+                                class="w-full h-full object-cover object-top transition duration-500 group-hover:scale-105"
+                            >
+                        </div>
+
+                        <!-- Status Badge -->
+                        <div class="absolute -bottom-2 inset-x-0 flex justify-center">
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200 shadow-sm">
+                                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                                Lecturer & AI Researcher
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Duolingo Language Badge -->
+                    <div class="mt-8 inline-flex items-center gap-3 px-4 py-2 bg-white border border-slate-200 rounded-full shadow-sm">
+                        <i class="fa-solid fa-language text-sky-600 text-lg"></i>
+                        <span class="text-xs sm:text-sm text-slate-700 font-medium">English Proficiency: <strong>Duolingo 120</strong></span>
+                    </div>
+                </div>
+
+                <!-- Right: Bio Info -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-sky-100/80 text-sky-800 mb-3">
+                            <i class="fa-solid fa-graduation-cap"></i> Academic & Researcher
+                        </div>
+                        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                            Muhammad Junaid Zaffar
+                        </h1>
+                        <p class="text-lg sm:text-xl font-semibold gradient-text mt-2">
+                            Lecturer in Data Science | Deputy Director / Academic Researcher
+                        </p>
+                    </div>
+
+                    <p class="text-slate-600 leading-relaxed text-base sm:text-lg">
+                        Dynamic academic and researcher with extensive experience in lecturing computer science and data science courses. Specialized in Machine Learning, Deep Learning, Computer Vision, and AI applications for Healthcare IoT. Proven track record of high-impact research publications, university governance, and software engineering.
+                    </p>
+
+                    <!-- Contact Quick Info -->
+                    <div class="pt-2 flex flex-wrap justify-center lg:justify-start gap-4 text-xs sm:text-sm text-slate-600">
+                        <div class="flex items-center gap-2 bg-white px-3 py-2 rounded-lg border border-slate-200 shadow-xs">
+                            <i class="fa-solid fa-location-dot text-sky-600"></i>
+                            <span>Bahawalpur / Lahore, Pakistan</span>
+                        </div>
+                        <div class="flex items-center gap-2 bg-white px-3 py-2 rounded-lg border border-slate-200 shadow-xs">
+                            <i class="fa-solid fa-envelope text-sky-600"></i>
+                            <span>mjunaidzaffar@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="pt-4 flex flex-wrap justify-center lg:justify-start gap-3">
+                        <a href="#contact" class="px-6 py-3 rounded-xl bg-sky-600 hover:bg-sky-700 text-white font-semibold shadow-md hover:shadow-lg transition flex items-center gap-2">
+                            <i class="fa-solid fa-paper-plane"></i> Get In Touch
+                        </a>
+                        <button onclick="copyEmail('mjunaidzaffar@gmail.com')" class="px-6 py-3 rounded-xl bg-white border border-slate-300 hover:bg-slate-100 text-slate-700 font-semibold shadow-xs transition flex items-center gap-2">
+                            <i class="fa-regular fa-copy"></i> Copy Email
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Focus Section -->
+    <section class="py-12 bg-white border-y border-slate-200/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-xs font-bold uppercase tracking-wider text-sky-600">Specialization</h2>
+                <p class="text-2xl font-bold text-slate-900 mt-1">Research Focus & Domain Expertise</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Domain 1 -->
+                <div class="p-6 bg-slate-50/80 border border-slate-200 rounded-2xl hover:border-sky-300 transition duration-300">
+                    <div class="w-12 h-12 bg-sky-100 text-sky-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Databases & Data Mining</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Data wrangling, feature engineering, predictive modeling, big data analytics, and relational database systems design.
+                    </p>
+                </div>
+
+                <!-- Domain 2 -->
+                <div class="p-6 bg-slate-50/80 border border-slate-200 rounded-2xl hover:border-sky-300 transition duration-300">
+                    <div class="w-12 h-12 bg-teal-100 text-teal-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Machine Learning & Deep Learning</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Neural networks, CNNs, image colorization models, classification algorithms, and high-performance deep architectures.
+                    </p>
+                </div>
+
+                <!-- Domain 3 -->
+                <div class="p-6 bg-slate-50/80 border border-slate-200 rounded-2xl hover:border-sky-300 transition duration-300">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">AI for Healthcare & IoT</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Computer vision diagnostics for pancreatic & prostate cancer detection, IoT smart health monitoring, and agricultural AI.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic History Section -->
+    <section id="education" class="py-16 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mb-12">
+                <h2 class="text-xs font-bold uppercase tracking-wider text-sky-600">Qualifications</h2>
+                <h3 class="text-3xl font-extrabold text-slate-900 mt-1">Academic History</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Degree 1 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm relative overflow-hidden flex flex-col justify-between">
+                    <div class="absolute top-0 right-0 w-2 h-full bg-sky-600"></div>
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-3 py-1 bg-sky-100 text-sky-800 rounded-full text-xs font-semibold">2017 - 2019</span>
+                            <span class="font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-md text-sm border border-emerald-200">CGPA: 3.638 / 4.00</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900">M.Sc. Computer Science</h4>
+                        <p class="text-sky-700 font-medium text-sm mt-1">University of Engineering and Technology (UET), Lahore</p>
+                        <div class="mt-4 text-xs sm:text-sm text-slate-600 bg-slate-50 p-4 rounded-xl border border-slate-100">
+                            <strong>Thesis:</strong> Automatic Images Colorization using Convolutional Neural Networks (CNN)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Degree 2 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm relative overflow-hidden flex flex-col justify-between">
+                    <div class="absolute top-0 right-0 w-2 h-full bg-teal-600"></div>
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-xs font-semibold">2013 - 2017</span>
+                            <span class="font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-md text-sm border border-emerald-200">CGPA: 3.54 / 4.00</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900">BS Computer Science</h4>
+                        <p class="text-teal-700 font-medium text-sm mt-1">The Islamia University of Bahawalpur (IUB)</p>
+                        <div class="mt-4 text-xs sm:text-sm text-slate-600 bg-slate-50 p-4 rounded-xl border border-slate-100">
+                            <strong>Focus:</strong> Core Computer Science principles, Software Engineering, Database Systems, and Algorithms.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mb-12">
+                <h2 class="text-xs font-bold uppercase tracking-wider text-sky-600">Career Pathway</h2>
+                <h3 class="text-3xl font-extrabold text-slate-900 mt-1">Work History & Teaching Experience</h3>
+            </div>
+
+            <div class="relative border-l-2 border-slate-200 ml-4 md:ml-6 space-y-10">
+
+                <!-- Experience Item 1 -->
+                <div class="relative pl-6 md:pl-8">
+                    <div class="absolute -left-2.5 top-1.5 w-5 h-5 rounded-full bg-sky-600 border-4 border-white"></div>
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+                        <div class="flex flex-wrap justify-between items-start gap-2 mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold text-slate-900">Lecturer & Academic Administrator</h4>
+                                <p class="text-sky-700 font-medium text-sm">The Islamia University of Bahawalpur (IUB)</p>
+                            </div>
+                            <span class="px-3 py-1 bg-sky-100 text-sky-800 text-xs font-bold rounded-full">Feb 2021 - Present</span>
+                        </div>
+                        <p class="text-slate-600 text-sm mb-4">Department of Data Science & Department of Computer Science</p>
+                        <div class="bg-white p-4 rounded-xl border border-slate-200">
+                            <h5 class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Taught Undergraduate Courses:</h5>
+                            <div class="flex flex-wrap gap-2 text-xs font-medium">
+                                <span class="bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md">Introduction to Data Science</span>
+                                <span class="bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md">Machine Learning</span>
+                                <span class="bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md">Deep Learning</span>
+                                <span class="bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md">Database Systems</span>
+                                <span class="bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md">Data Mining</span>
+                                <span class="bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md">Programming Fundamentals</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="relative pl-6 md:pl-8">
+                    <div class="absolute -left-2.5 top-1.5 w-5 h-5 rounded-full bg-teal-600 border-4 border-white"></div>
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+                        <div class="flex flex-wrap justify-between items-start gap-2 mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold text-slate-900">Lecturer</h4>
+                                <p class="text-teal-700 font-medium text-sm">University of Central Punjab (UCP), Lahore</p>
+                            </div>
+                            <span class="px-3 py-1 bg-teal-100 text-teal-800 text-xs font-bold rounded-full">Feb 2020 - Feb 2021</span>
+                        </div>
+                        <p class="text-slate-600 text-sm mb-4">Faculty of Information Technology</p>
+                        <div class="bg-white p-4 rounded-xl border border-slate-200">
+                            <h5 class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Taught Undergraduate Courses:</h5>
+                            <div class="flex flex-wrap gap-2 text-xs font-medium">
+                                <span class="bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md">Object Oriented Programming</span>
+                                <span class="bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md">Data Structures & Algorithms</span>
+                                <span class="bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md">Software Engineering</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Item 3 -->
+                <div class="relative pl-6 md:pl-8">
+                    <div class="absolute -left-2.5 top-1.5 w-5 h-5 rounded-full bg-indigo-600 border-4 border-white"></div>
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+                        <div class="flex flex-wrap justify-between items-start gap-2 mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold text-slate-900">Graduate Assistant & Research Assistant</h4>
+                                <p class="text-indigo-700 font-medium text-sm">UET Lahore & KICS (Al-Khawarizmi Institute of Computer Science)</p>
+                            </div>
+                            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 text-xs font-bold rounded-full">2017 - 2019</span>
+                        </div>
+                        <p class="text-slate-600 text-sm">Assisted in academic labs, computer vision research labs, image colorization algorithms, and healthcare prediction systems.</p>
+                    </div>
+                </div>
+
+                <!-- Experience Item 4 -->
+                <div class="relative pl-6 md:pl-8">
+                    <div class="absolute -left-2.5 top-1.5 w-5 h-5 rounded-full bg-amber-600 border-4 border-white"></div>
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+                        <div class="flex flex-wrap justify-between items-start gap-2 mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold text-slate-900">Junior Software Engineer</h4>
+                                <p class="text-amber-700 font-medium text-sm">Concepts Solution</p>
+                            </div>
+                            <span class="px-3 py-1 bg-amber-100 text-amber-800 text-xs font-bold rounded-full">2016 - 2017</span>
+                        </div>
+                        <p class="text-slate-600 text-sm">Software design, Point of Sale (POS) application development, and database architecture.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+                <div>
+                    <h2 class="text-xs font-bold uppercase tracking-wider text-sky-600">Innovations & Implementations</h2>
+                    <h3 class="text-3xl font-extrabold text-slate-900 mt-1">Research & Software Projects</h3>
+                </div>
+
+                <!-- Search Input -->
+                <div class="relative min-w-[260px]">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-slate-400"></i>
+                    <input type="text" id="project-search" placeholder="Search projects..." class="w-full pl-9 pr-4 py-2 bg-white border border-slate-300 rounded-xl text-sm focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500">
+                </div>
+            </div>
+
+            <!-- Category Filter Buttons -->
+            <div class="flex flex-wrap gap-2 mb-8" id="category-filters">
+                <button class="filter-btn active px-4 py-2 rounded-xl text-xs font-bold bg-sky-600 text-white transition" data-category="all">All</button>
+                <button class="filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 transition" data-category="ai">AI / ML / DL</button>
+                <button class="filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 transition" data-category="healthcare">Healthcare</button>
+                <button class="filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 transition" data-category="vision">Computer Vision</button>
+                <button class="filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 transition" data-category="software">Software Systems</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="projects-container">
+                
+                <!-- Project Card 1 -->
+                <div class="project-card bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between" data-category="healthcare ai">
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="px-2.5 py-1 bg-red-50 text-red-700 text-xs font-bold rounded-md">Healthcare IoT</span>
+                            <i class="fa-solid fa-heart-pulse text-red-500"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-900 mb-2">Smart IoT Health Monitoring</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">IoT-driven patient monitoring system utilizing predictive Machine Learning for real-time risk alerts.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-1.5 text-[11px] font-semibold text-slate-500">
+                        <span class="bg-slate-100 px-2 py-0.5 rounded">IoT</span>
+                        <span class="bg-slate-100 px-2 py-0.5 rounded">Python</span>
+                        <span class="bg-slate-100 px-2 py-0.5 rounded">ML</span>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between" data-category="healthcare ai vision">
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="px-2.5 py-1 bg-purple-50 text-purple-700 text-xs font-bold rounded-md">Medical Imaging</span>
+                            <i class="fa-solid fa-microscope text-purple-500"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-900 mb-2">Pancreatic Cancer Detection</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">Deep Convolutional Neural Networks for early pancreatic tumor identification on medical scans.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-1.5 text-[11px] font-semibold text-slate-500">
+                        <span class="bg-slate-100 px-2 py-0.5 rounded">CNN</span>
+                        <span class="bg-slate-100 px-2 py-0.5 rounded">Deep Learning</span>
+                        <span class="bg-slate-100 px-2 py-0.5 rounded">OpenCV</span>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between" data-category="ai vision">
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="px-2.5 py-1 bg-sky-50 text-sky-700 text-xs font-bold rounded-md">Research Thesis</span>
+                            <i class="fa-solid fa-palette text-sky-500"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-900 mb-2">Automatic Image Colorization</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">M.Sc Thesis project converting grayscale images to vibrant natural color using end-to-end CNN architectures.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-1.5 text-[11px] font-semibold text-slate-500">
+                        <span class="bg-slate-100 px-2 py-0.5 rounded">PyTorch</span>
+                        <span class="bg-slate-100 px-2 py-0.5 rounded">CNN</span>
+                        <span class="bg-slate-100 px-2 py-0.5 rounded">Computer Vision</span>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="project-card bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between" data-category="ai">
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="px-2.5 py-1 bg-emerald-50 text-emerald-700 text-xs font-bold rounded-md">NLP / Sentiment</span>
+                            <i class="fa-solid fa-comments text-emerald-500"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-900 mb-2">EmoSense Sentiment Analyzer</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">Textual sentiment classifier analyzing micro-expressions, reviews, and emotional tones in user feedback.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-1.5 text-[11px] font-semibold text-slate-500">
+                        <span class="bg-slate-100 px-2 py-0.5 rounded">NLP</span>
+                        <span class="bg-slate-100 px-2 py-0.5 rounded">Python</span>
+                        <span class="bg-slate-100 px-2 py-0.5 rounded">Scikit-Learn</span>
+                    </div>
+                </div>
+
+                <!-- Project Card 5 -->
+                <div class="project-card bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between" data-category="ai vision">
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="px-2.5 py-1 bg-amber-50 text-amber-700 text-xs font-bold rounded-md">AgriTech AI</span>
+                            <i class="fa-solid fa-wheat-awn text-amber-500"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-900 mb-2">Cotton & Tomato Leaf Help</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">Computer vision systems identifying crop diseases in early stages from leaf imagery.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-1.5 text-[11px] font-semibold text-slate-500">
+                        <span class="bg-slate-100 px-2 py-0.5 rounded">TensorFlow</span>
+                        <span class="bg-slate-100 px-2 py-0.5 rounded">ResNet</span>
+                        <span class="bg-slate-100 px-2 py-0.5 rounded">AgriTech</span>
+                    </div>
+                </div>
+
+                <!-- Project Card 6 -->
+                <div class="project-card bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between" data-category="software">
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-700 text-xs font-bold rounded-md">Enterprise</span>
+                            <i class="fa-solid fa-cash-register text-indigo-500"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-900 mb-2">Point of Sale (POS) & SmartDR</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">Commercial inventory management, billing, and record-keeping desktop software applications.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-1.5 text-[11px] font-semibold text-slate-500">
+                        <span class="bg-slate-100 px-2 py-0.5 rounded">C#</span>
+                        <span class="bg-slate-100 px-2 py-0.5 rounded">SQL Server</span>
+                        <span class="bg-slate-100 px-2 py-0.5 rounded">Desktop App</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="py-16 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mb-12">
+                <h2 class="text-xs font-bold uppercase tracking-wider text-sky-600">Capabilities</h2>
+                <h3 class="text-3xl font-extrabold text-slate-900 mt-1">Technical Skills & Toolkit</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Skill Group 1 -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+                    <h4 class="font-bold text-slate-900 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-code text-sky-600"></i> Programming
+                    </h4>
+                    <div class="flex flex-wrap gap-2 text-xs font-semibold">
+                        <span class="bg-white border border-slate-200 px-3 py-1.5 rounded-lg text-slate-700">Python</span>
+                        <span class="bg-white border border-slate-200 px-3 py-1.5 rounded-lg text-slate-700">C++</span>
+                        <span class="bg-white border border-slate-200 px-3 py-1.5 rounded-lg text-slate-700">C#</span>
+                        <span class="bg-white border border-slate-200 px-3 py-1.5 rounded-lg text-slate-700">R</span>
+                        <span class="bg-white border border-slate-200 px-3 py-1.5 rounded-lg text-slate-700">SQL</span>
+                    </div>
+                </div>
+
+                <!-- Skill Group 2 -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+                    <h4 class="font-bold text-slate-900 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-network-wired text-teal-600"></i> ML / DL Frameworks
+                    </h4>
+                    <div class="flex flex-wrap gap-2 text-xs font-semibold">
+                        <span class="bg-white border border-slate-200 px-3 py-1.5 rounded-lg text-slate-700">PyTorch</span>
+                        <span class="bg-white border border-slate-200 px-3 py-1.5 rounded-lg text-slate-700">TensorFlow</span>
+                        <span class="bg-white border border-slate-200 px-3 py-1.5 rounded-lg text-slate-700">Keras</span>
+                        <span class="bg-white border border-slate-200 px-3 py-1.5 rounded-lg text-slate-700">Scikit-Learn</span>
+                        <span class="bg-white border border-slate-200 px-3 py-1.5 rounded-lg text-slate-700">OpenCV</span>
+                    </div>
+                </div>
+
+                <!-- Skill Group 3 -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+                    <h4 class="font-bold text-slate-900 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-database text-indigo-600"></i> Data Science & Databases
+                    </h4>
+                    <div class="flex flex-wrap gap-2 text-xs font-semibold">
+                        <span class="bg-white border border-slate-200 px-3 py-1.5 rounded-lg text-slate-700">Pandas / NumPy</span>
+                        <span class="bg-white border border-slate-200 px-3 py-1.5 rounded-lg text-slate-700">MySQL</span>
+                        <span class="bg-white border border-slate-200 px-3 py-1.5 rounded-lg text-slate-700">MS SQL Server</span>
+                        <span class="bg-white border border-slate-200 px-3 py-1.5 rounded-lg text-slate-700">Data Mining</span>
+                        <span class="bg-white border border-slate-200 px-3 py-1.5 rounded-lg text-slate-700">PowerBI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards, Training & Service -->
+    <section class="py-16 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <!-- Awards & Scholarships -->
+            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200">
+                <h4 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-trophy text-amber-500"></i> Scholarships & Recognition
+                </h4>
+                <ul class="space-y-3 text-sm text-slate-600">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-emerald-500 mt-1"></i>
+                        <span><strong>PEEF Master's Level Scholarship</strong> holder for academic excellence in M.Sc.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-emerald-500 mt-1"></i>
+                        <span><strong>Position Holder Scholarship</strong> during BS Computer Science at IUB.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-emerald-500 mt-1"></i>
+                        <span>Active participant in university research workshops (2018 - 2023).</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Community & Mentorship -->
+            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200">
+                <h4 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-hands-holding-child text-sky-600"></i> Community & Mentorship
+                </h4>
+                <ul class="space-y-3 text-sm text-slate-600">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-heart text-red-500 mt-1"></i>
+                        <span>Active volunteer for <strong>Hope of Life Blood Donor Society</strong>.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-user-graduate text-sky-600 mt-1"></i>
+                        <span>Provides free counseling and academic guidance for aspiring undergraduate researchers.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-chalkboard-user text-teal-600 mt-1"></i>
+                        <span>Organized departmental coding bootcamps & Data Science workshops.</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact & References -->
+    <section id="contact" class="py-16 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-xs font-bold uppercase tracking-wider text-sky-600">Get In Touch</h2>
+            <h3 class="text-3xl font-extrabold text-slate-900 mt-1">Contact & Academic References</h3>
+            <p class="text-slate-600 max-w-xl mx-auto mt-2 text-sm sm:text-base">
+                Feel free to reach out for research collaborations, academic inquiries, or student advising.
+            </p>
+
+            <div class="mt-8 flex justify-center">
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 max-w-md w-full">
+                    <p class="text-sm font-semibold text-slate-700">Email Address:</p>
+                    <p class="text-lg font-bold text-sky-700 mt-1">mjunaidzaffar@gmail.com</p>
+                    <button onclick="copyEmail('mjunaidzaffar@gmail.com')" class="mt-4 px-4 py-2 bg-sky-600 hover:bg-sky-700 text-white rounded-xl text-xs font-bold transition">
+                        Copy Email
+                    </button>
+                </div>
+            </div>
+
+            <!-- References note -->
+            <div class="mt-12 text-xs text-slate-500">
+                References available upon request (Dr. Usman Ghani Khan, Dr. Syed Khaldoon Khurshid, Dr. Muhammad Ateeq).
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center text-xs border-t border-slate-800">
+        <p>© <span id="year"></span> Muhammad Junaid Zaffar. All rights reserved.</p>
+    </footer>
+
+    <!-- Toast Alert Notification -->
+    <div id="toast" class="fixed bottom-5 right-5 bg-slate-900 text-white text-xs px-4 py-3 rounded-xl shadow-lg transform translate-y-20 opacity-0 transition-all duration-300 flex items-center gap-2">
+        <i class="fa-solid fa-circle-check text-emerald-400"></i>
+        <span id="toast-msg">Email copied to clipboard!</span>
+    </div>
+
+    <!-- Client JavaScript -->
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Copy Email Toast functionality
+        function copyEmail(email) {
+            const tempInput = document.createElement('input');
+            tempInput.value = email;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            const toast = document.getElementById('toast');
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            setTimeout(() => {
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 3000);
+        }
+
+        // Project filtering logic
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+        const searchInput = document.getElementById('project-search');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-sky-600', 'text-white', 'active');
+                    b.classList.add('bg-white', 'text-slate-600');
+                });
+                btn.classList.add('bg-sky-600', 'text-white', 'active');
+                btn.classList.remove('bg-white', 'text-slate-600');
+                filterProjects();
+            });
+        });
+
+        searchInput.addEventListener('input', filterProjects);
+
+        function filterProjects() {
+            const activeCategory = document.querySelector('.filter-btn.active').getAttribute('data-category');
+            const query = searchInput.value.toLowerCase().trim();
+
+            projectCards.forEach(card => {
+                const categories = card.getAttribute('data-category');
+                const text = card.textContent.toLowerCase();
+
+                const matchesCategory = (activeCategory === 'all' || categories.includes(activeCategory));
+                const matchesSearch = text.includes(query);
+
+                if (matchesCategory && matchesSearch) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
